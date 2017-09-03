@@ -1,0 +1,26 @@
+{
+  "name": "training-from-hell",
+  "version": "1.0.0",
+  "description": "training-from-hell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crislmfroes/training-from-hell.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crislmfroes/training-from-hell/issues"
+  },
+  "homepage": "https://github.com/crislmfroes/training-from-hell#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "eslint": "^4.5.0",
+    "eslint-config-google": "^0.9.1",
+    "harp": "^0.24.0"
+  }
+}
