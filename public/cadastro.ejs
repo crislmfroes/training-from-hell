@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Treinamento do Inferno!!!</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="sucesso"></div>
+        <nav class="navbar navbar-default" role="navigation">
+            <a class="navbar-brand" href="#">MyTube</a>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index">Minhas Playlists</a>
+                </li>
+                <li class="active">
+                    <a href="">Cadastrar Playlist</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <form action="" method="POST" role="form">        
+            <div class="form-group">
+                <label for="nomeDaPlaylist">Nome da Playlist</label>
+                <input type="text" class="form-control" id="nomeDaPlaylist" placeholder="Nome da Playlist" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+        <form action="" method="POST" role="form">        
+            <div class="form-group">
+                <label for="idDoVideo">ID do Vídeo</label>
+                <input type="text" class="form-control" id="idDoVideo" placeholder="ID do Vídeo" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar à Playlist</button>
+        </form>
+        <div id="videos"></div>
+        
+    </div>
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/handlebars/handlebars.min.js"></script>
+    <script id="templateSucesso" type="text/x-handlebars-template">
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Sucesso!</strong> A playlist {{nome}} foi cadastrada!
+        </div>
+    </script>
+    <script src="/js/persistencia.js"></script>
+    <script src="/js/playlist.js"></script>
+    <script src="/js/cadastro.js"></script>
+</body>
+
+</html>

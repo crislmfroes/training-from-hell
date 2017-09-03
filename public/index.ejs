@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Treinamento do Inferno!!!</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container"> 
+       <nav class="navbar navbar-default" role="navigation">
+           <a class="navbar-brand" href="#">MyTube</a>
+           <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="">Minhas Playlists</a>
+            </li>
+               <li>
+                   <a href="cadastro">Cadastrar Playlist</a>
+               </li>
+            </ul>
+       </nav>
+       <div class="container-playlists">
+       </div>  
+    </div>
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/handlebars/handlebars.min.js"></script>
+    <script src="/js/persistencia.js"></script>
+    <script id="templateThumbnail" type="text/x-handlebars-template">
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">{{nome}}</h4>
+                <p class="card-text">{{atual}} / {{total}}</p>
+                <button class="btn btn-primary">Assistir</button>
+            </div>
+        </div>
+    </script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
